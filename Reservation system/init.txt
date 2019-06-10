@@ -1,0 +1,11 @@
+init
+status
+reserve Amro A 111
+status
+reserve Jason A 105
+status
+reserve Mathew B 208
+status
+reserve Ben B 211
+status
+exit

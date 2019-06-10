@@ -1,0 +1,32 @@
+"A_simple_shell" is a C program that implements a shell interface that accepts user commands and executes each command in a separate process. 
+It provides a command prompt, where the user inputs a line of command including cat, cd(change directory), pwd (present working directory),
+exit (leave shell), fg (foreground a background job), and jobs (list background jobs). 
+
+"Reservation system" is a reservation system with multiple processes, the processes are independently launchable from the shell. Shared memory is used for creating the inter process communication.
+
+Instructions to compile the files
+
+1)There are two important files namely main.c,clearout.c.
+
+for main.c
+-------------------------------
+gcc main.c -o main -pthread -lrt
+
+for clearout.c 
+-------------------------------
+gcc clearout.c -o clearout -pthread -lrt
+
+
+2)Usage of these files
+
+./main or ./main <filename>
+starts the table reservation program
+
+
+./clearout 
+destroys all the named semaphore and shared memory.
+
+
+These executables can be run in different terminals opened in the same directory.
+
+"file system" is a simple file system (SFS) that can be mounted by the user under a directory in the users machine.
